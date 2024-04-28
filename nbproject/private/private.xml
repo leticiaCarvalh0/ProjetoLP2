@@ -4,9 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Servico.java</file>
+            <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Descontavel.java</file>
+            <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Gato.java</file>
+            <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Pessoa.java</file>
             <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Animal.java</file>
+            <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/EstoqueInsuficienteException.java</file>
+            <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Vacinavel.java</file>
+            <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Funcionario.java</file>
+            <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Cachorro.java</file>
             <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Produto.java</file>
-            <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/PetShop.java</file>
             <file>file:/C:/Users/letic/OneDrive/Documentos/NetBeansProjects/PetShop/src/petshop/Cliente.java</file>
         </group>
     </open-files>

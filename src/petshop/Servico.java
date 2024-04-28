@@ -12,19 +12,50 @@ import java.util.List;
  *
  * @author letic
  */
-public class Servico {
+public class Servico implements Descontavel{
     private int idServico;
     private String descricao;
     private double valor;
     private Animal animal;
-    private List<Produto> listaProduto = new ArrayList<Produto>();
-       
-    public Servico(int idServico, String descricao, double valor, Animal animal, List listaProduto){
+    private List<Servico> listaservicos = new ArrayList<Servico>();
+    private boolean agendado;
+    
+    public Servico(int idServico, String descricao, double valor, Animal animal, boolean agendado,List listaservicos){
         this.idServico=idServico;
         this.descricao=descricao;
         this.valor=valor;
         this.animal = animal;
-        this.listaProduto = new ArrayList<Produto>();
+        this.agendado=false;
+        this.listaservicos = new ArrayList<Servico>();
+    }
+    
+    public void agendaServico(){
+       if(!agendado){ 
+           System.out.println("O servico de "+descricao+" foi agendado");
+           agendado=true;
+       }else{
+           System.out.println("O servico de "+descricao+" ja esta agendado");
+       }
+    }
+ 
+    public void cancelaServico(){
+        if(agendado){
+            System.out.println("O servico de "+descricao+" foi cancelado");
+    }else{
+            System.out.println("Nao ha nenhum servico de "+descricao+" agendado para cancelar");
+        }       
+    } 
+    
+    public boolean isAgendado(){
+        return agendado;
+    }
+    
+    public static void listaServicos(List<Servico> servicos){
+        for(Servico servico : servicos){
+            if(servico.isAgendado()){
+                System.out.println("Tipo: "+servico.getDescricao()+"Valor: "+servico.getValor());
+            }
+        }
     }
 
     public int getIdServico() {
@@ -59,10 +90,10 @@ public class Servico {
         this.animal = animal;
     }
 
-   
-    
-    public void cancelaServico(){
-        
+    @Override
+    public double aplicarDesconto(double precoOriginal) {
+        precoOriginal=this.valor;
+       return precoOriginal*0.9;//desconto de 10%
     }
     
 }

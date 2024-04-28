@@ -9,7 +9,7 @@ package petshop;
  *
  * @author letic
  */
-public class Animal {
+public abstract class Animal {
     private String nome, raça;
     private int idade;
     private Cliente cliente;
@@ -20,17 +20,23 @@ public class Animal {
         this.idade=idade;
         this.cliente=cliente;
     }
+     
+     public void exibirDados(){
+         System.out.println("Nome do pet: "+nome);
+         System.out.println("Idade: "+idade);
+         System.out.println("Dono(a): "+cliente);
+     }
 
     public String getNome() {
         return nome;
     }
 
-
+    
     public String getRaça() {
         return raça;
     }
 
-
+    
     public int getIdade() {
         return idade;
     }
